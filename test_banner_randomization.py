@@ -40,7 +40,9 @@ class TestBannerRandomization(unittest.TestCase, TestBaseAdmin, TestBaseFrontEnd
 
         banner_type_id = setting_banner_type_id
         slide_group_id = setting_slide_group_id
+        
         # {dc_id: slide_priority}
+        
         dc_id_and_priority_dict = setting_dc_id_and_priority_dict
 
         banner_dc2_slide_order, caption = \
@@ -72,7 +74,9 @@ class TestBannerRandomization(unittest.TestCase, TestBaseAdmin, TestBaseFrontEnd
 
         banner_type_id = setting_banner_type_id
         slide_group_id = setting_slide_group_id
+        
         # {dc_id: slide_priority}
+        
         dc_id_and_priority_dict = setting_random_dc_id_and_priority_dict
 
         banner_dc2_slide_order, caption = \
@@ -144,6 +148,7 @@ class TestBannerRandomization(unittest.TestCase, TestBaseAdmin, TestBaseFrontEnd
 
         if not clicked_on_slide_group:
             print('Slide group with id -{} does not exists in the selected banner group'.format(slide_group_id))
+            
         # returns all the li tags for dc
         # driver.find_elements_by_xpath('//form/table/tbody/tr[3]/td[2]/ul/li')
 
